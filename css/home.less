@@ -1,0 +1,415 @@
+//引入公共样式
+@import "./common.less";
+
+//导航区域
+#nav {
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .header {
+    width: 100%;
+    padding: 24px;
+    .img-l {
+      width: 36px;
+      height: 36px;
+    }
+
+    .img-r {
+      width: 24px;
+      height: 24px;
+    }
+
+    .header-ul > li {
+      font-weight: 600;
+    }
+  }
+
+  .body {
+    height: 90vh;
+    padding: 4%;
+    .cont {
+      a {
+        color: #00a862 !important;
+        margin-right: 2rem;
+
+        span {
+          font-size: 1.2rem;
+        }
+
+        .reg {
+          border: 1px solid #00a862;
+          border-radius: 30px;
+          padding: 0 0.5rem 0.15rem;
+        }
+      }
+
+      .body-l {
+        width: 28px;
+        height: 28px;
+        margin-top: 0.15rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .nav-cont {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    background: #fff;
+    z-index: 999;
+    .header {
+      padding: 24px 50px;
+    }
+
+    .cont-ul {
+      padding: 0 10% 0 20%;
+
+      li {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        font-weight: 500;
+      }
+    }
+
+    .cont,
+    p {
+      padding-left: 20%;
+    }
+
+    .cont {
+      a {
+        color: #00a862 !important;
+        margin-right: 2rem;
+
+        span {
+          font-size: 1.2rem;
+        }
+
+        .reg {
+          border: 1px solid #00a862;
+          border-radius: 30px;
+          padding: 0 0.5rem 0.15rem;
+        }
+      }
+
+      .body-l {
+        width: 28px;
+        height: 28px;
+        margin-top: 0.15rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    position: static;
+    width: 100%;
+    .body {
+      width: 100%;
+      height: 100%;
+      margin-left: 24px;
+
+      .cont {
+        margin-top: 1rem;
+      }
+    }
+
+    .nav-cont {
+      width: 100%;
+      height: 100%;
+      .cont-ul {
+        padding: 0 14%;
+
+        li {
+          line-height: 1.4;
+        }
+      }
+
+      .cont,
+      p {
+        margin: 0;
+        padding-left: 10%;
+      }
+    }
+  }
+  @media screen and (max-width: 1025px) and (min-width: 768px) {
+    width: 96%;
+  }
+  @media screen and (max-width: 768px) {
+    position: static;
+    width: 93%;
+    .body {
+      .container-fluid {
+        padding-left: 0;
+      }
+
+      width: 100%;
+      height: 100%;
+
+      .body-h2 {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+      }
+
+      .cont {
+        margin: 0;
+      }
+    }
+  }
+}
+
+//主体区域
+#body {
+  width: 70%;
+  margin-left: 30%;
+  .ad {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px 6px;
+    color: #fff;
+    background-color: #000;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border-radius: 2px;
+    z-index: 200;
+  }
+
+  .carousel {
+    #carousel-item {
+      img {
+        width: 1063px;
+        height: 498px;
+      }
+    }
+
+    button {
+      .icon {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .three > div {
+    padding: 0;
+
+    .row-img {
+      width: 339px;
+      height: 248px;
+      padding: 12px;
+
+      img {
+        box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+        border-radius: 2px;
+
+        &:hover {
+          box-shadow: 0 1px 3px 2px rgb(0 0 0 / 12%);
+          transform: translateY(-10px);
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+
+  .context {
+    .lft {
+      margin-right: 6rem;
+
+      .p1 {
+        line-height: 1.8;
+        color: #807d7d;
+
+        span {
+          color: #c2a661;
+        }
+      }
+
+      .p2 {
+        span {
+          font-size: 1.2rem;
+          color: #00a862;
+          border: 1px solid #00a862;
+          border-radius: 30px;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+
+    .rgt {
+      width: 236px;
+      height: 72px;
+    }
+  }
+
+  .Card {
+    padding: 3% 10%;
+    background: #f4f5f5;
+
+    .p {
+      color: #807d7d;
+    }
+
+    .cardBox {
+      .card > img {
+        width: 101px;
+        height: 72px;
+        margin-top: -2rem;
+      }
+
+      .card {
+        align-items: center;
+        width: 20%;
+        margin: 0 20px;
+
+        .card-body {
+          padding: 0;
+        }
+
+        .p1 {
+          font-size: 1.3rem;
+        }
+
+        .p2 {
+          color: #807d7d;
+        }
+
+        .p3 {
+          color: #c2a661;
+        }
+
+        box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+        border-radius: 2px;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 3px 2px rgb(0 0 0 / 12%);
+          transform: translateY(-10px);
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+
+  .culture {
+    padding: 3% 0;
+    overflow: hidden;
+    .p {
+      color: #807d7d;
+    }
+    .carousel-itm {
+      width: max-content;
+      //overflow-x: auto;
+      .box {
+        width: 290px;
+        height: 225px;
+        float: left;
+        margin: 0 10px;
+        img {
+          width: 290px;
+          height: 168px;
+        }
+        box-shadow: 0 1px 1px 1px rgb(0 0 0 / 12%);
+        border-radius: 2px;
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 1px 3px 2px rgb(0 0 0 / 12%);
+          transform: translateY(-10px);
+          transition: all 0.4s;
+        }
+        span {
+          top: 0;
+          left: 0;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          background: #c2a661;
+          margin-top: 0.5rem;
+        }
+        p {
+          margin-top: 0.8rem;
+          text-align: left;
+          font-size: 1.2rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    width: 100%;
+    margin: 0;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    #carousel_one {
+      display: none;
+    }
+
+    .three > div {
+      .row-img {
+        width: 451px;
+        height: 285px;
+      }
+    }
+    #carousel_two > img {
+      width: 375px;
+      height: 410px !important;
+    }
+
+    .bi-chevron-right {
+      margin: 0 !important;
+    }
+
+    .context {
+      text-align: center;
+
+      .lft {
+        margin-right: 0;
+
+        .p2 {
+          margin: 2rem 0;
+        }
+      }
+
+      .rgt {
+        margin: 1rem auto;
+      }
+    }
+
+    .Card {
+      padding: 0;
+
+      .cardBox {
+        flex-wrap: wrap;
+
+        .card {
+          width: 44%;
+          margin: 0 10px;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .culture {
+      .carousel-itm {
+        width: max-content;
+        margin-left: -2rem;
+        .box {
+          width: 254px;
+          height: 200px;
+          img {
+            height: 144px;
+          }
+        }
+      }
+    }
+  }
+}
